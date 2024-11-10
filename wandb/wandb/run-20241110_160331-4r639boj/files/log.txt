@@ -1,0 +1,69 @@
+[11.10.24 16:03:32] train_clues.py --default_train=base --name=naive_top_curricular --project=curricular --wandb_dir=./wandb --data_dir=./data/clue_json/guardian/naive_random --multitask=ACW__ACW_descramble --num_workers=0
+[11.10.24 16:03:32] Setting seed
+[11.10.24 16:03:32] Saver will track (metric, maximize?)
+ [('dev/num_match_top_sampled', True), ('multisave', True), ('multi/acw/num_match_in_sample', True), ('epoch', True)]
+[11.10.24 16:03:32] Device: cpu	 GPU IDs: []	 machine: lizs-mbp-4.wifi.local.cmu.edu
+
+[11.10.24 16:03:32] Starting new HTTPS connection (1): huggingface.co:443
+[11.10.24 16:03:32] https://huggingface.co:443 "HEAD /t5-base/resolve/main/config.json HTTP/11" 200 0
+[11.10.24 16:03:32] Starting new HTTPS connection (1): huggingface.co:443
+[11.10.24 16:03:33] https://huggingface.co:443 "HEAD /t5-base/resolve/main/pytorch_model.bin HTTP/11" 302 0
+[11.10.24 16:03:35] Starting new HTTPS connection (1): huggingface.co:443
+[11.10.24 16:03:35] https://huggingface.co:443 "HEAD /t5-base/resolve/main/spiece.model HTTP/11" 200 0
+[11.10.24 16:03:35] Starting new HTTPS connection (1): huggingface.co:443
+[11.10.24 16:03:35] https://huggingface.co:443 "HEAD /t5-base/resolve/main/tokenizer.json HTTP/11" 200 0
+[11.10.24 16:03:35] Starting new HTTPS connection (1): huggingface.co:443
+[11.10.24 16:03:35] https://huggingface.co:443 "HEAD /t5-base/resolve/main/added_tokens.json HTTP/11" 404 0
+[11.10.24 16:03:35] Starting new HTTPS connection (1): huggingface.co:443
+[11.10.24 16:03:35] https://huggingface.co:443 "HEAD /t5-base/resolve/main/special_tokens_map.json HTTP/11" 404 0
+[11.10.24 16:03:35] Starting new HTTPS connection (1): huggingface.co:443
+[11.10.24 16:03:35] https://huggingface.co:443 "HEAD /t5-base/resolve/main/tokenizer_config.json HTTP/11" 404 0
+[11.10.24 16:03:36] Setting up for multitask
+[11.10.24 16:03:36] Loading cluedatasetbatched of type train
+[11.10.24 16:03:36] For dataset, found readme: 
+[11.10.24 16:03:36] ['Guardian data. Split: naive_random\n', 'Total: 142380\n', 'splits: [85428, 28476, 28476]\n', '\n', "{'idx': -1,\n", " 'input': 'Suffering to grasp edge of plant (8)',\n", " 'target': 'agrimony'}\n", "{'idx': -1,\n", " 'input': 'Honour Ben and Noel with new order (7)',\n", " 'target': 'ennoble'}\n", "{'idx': -1, 'input': 'Bit the royal we love? Cheers! (4)', 'target': 'iota'}\n", '\n', '\n']
+[11.10.24 16:03:36] Dataset train loaded with size: 85428
+[11.10.24 16:03:36] Dataloader:
+	Record past, up to yesterday's ultimate revelation (9) => discovery
+[11.10.24 16:03:36] Dataloader loaded from dataset
+[11.10.24 16:03:36] Loading cluedatasetbatched of type val
+[11.10.24 16:03:36] Dataset val loaded with size: 28476
+[11.10.24 16:03:36] Dataloader:
+	Desk register taken no further than Ozzie? (7) => rolltop
+[11.10.24 16:03:36] Dataloader loaded from dataset
+[11.10.24 16:03:36] For task acw, using cfg-provided collate function
+[11.10.24 16:03:36] Loading cluedatasetbatched of type train
+[11.10.24 16:03:36] For dataset, found readme: 
+[11.10.24 16:03:36] ['ACW set; xd cw set, all\n', 'Total: 2970569\n', 'splits: [2970569]\n', '\n', "{'idx': 0,\n", " 'input': 'Prime whose first three digits are p^q and whose last three digits '\n", "          'are q^p (for primes p, q whose value is left as an exercise for the '\n", "          'reader) (6)',\n", " 'target': '125243'}\n", "{'idx': 1,\n", " 'input': 'Multiple of XI (except not in Roman numerals; also, hope you '\n", "          'learned the trick for checking divisibility by eleven, which is '\n", "          'similar to the trick for nine except with an alternating sum, '\n", "          'because eleven is one more than ten while nine is one less than '\n", "          'ten) (6)',\n", " 'target': '158719'}\n", "{'idx': 2,\n", " 'input': 'Overture whose use of cannons is canon (4)',\n", " 'target': '1812'}\n", '\n', '\n']
+[11.10.24 16:03:38] Dataloader:
+	phrase: Light-sensing eye part (6) => retina
+[11.10.24 16:03:38] Dataloader loaded from dataset
+[11.10.24 16:03:39] Dataloader:
+	phrase: Dwarf planet just beyond the Kuiper Belt (4) => eris
+[11.10.24 16:03:39] Dataloader loaded from dataset
+[11.10.24 16:03:39] For task acw_descramble, using cfg-provided collate function
+[11.10.24 16:03:39] Loading cluedatasetbatched of type train
+[11.10.24 16:03:39] For dataset, found readme: 
+[11.10.24 16:03:39] ['ACW set; xd cw set, all\n', 'Total: 2970569\n', 'splits: [2970569]\n', '\n', "{'idx': 0,\n", " 'input': 'Prime whose first three digits are p^q and whose last three digits '\n", "          'are q^p (for primes p, q whose value is left as an exercise for the '\n", "          'reader) (6)',\n", " 'target': '125243'}\n", "{'idx': 1,\n", " 'input': 'Multiple of XI (except not in Roman numerals; also, hope you '\n", "          'learned the trick for checking divisibility by eleven, which is '\n", "          'similar to the trick for nine except with an alternating sum, '\n", "          'because eleven is one more than ten while nine is one less than '\n", "          'ten) (6)',\n", " 'target': '158719'}\n", "{'idx': 2,\n", " 'input': 'Overture whose use of cannons is canon (4)',\n", " 'target': '1812'}\n", '\n', '\n']
+[11.10.24 16:03:41] Dataloader:
+	descramble: ihns lower leg part (4) => shin
+[11.10.24 16:03:41] Dataloader loaded from dataset
+[11.10.24 16:03:41] Dataloader:
+	descramble: iers dwarf planet just beyond the Kuiper Belt (4) => eris
+[11.10.24 16:03:41] Dataloader loaded from dataset
+[11.10.24 16:03:41] Configuring multiloader with freqs [20, 3, 3] batches
+[11.10.24 16:03:41] Finished setting up multiloader
+	 batch_sizes: [256, 256, 256]
+	 freq: [20, 3, 3]
+[11.10.24 16:03:41] Verifying that all metrics are OK. The outputs here are NOT from the model that was passed ifone was passed
+[11.10.24 16:03:41] Evaluating at all_step 0 (epoch=0)...
+[11.10.24 16:03:41] Primary eval; epoch: 0
+[11.10.24 16:05:28] 
+ idx: -1
+Source: Desk register taken no further than Ozzie? (7)
+ 	Target: rolltop
+	 Actual: Ozzie? (7) (7) (8) (8) (8) (8) (8) 
+
+[11.10.24 16:05:28] Multitask eval; epoch: 0
+[11.10.24 16:05:28] Validating DL acw
+[11.10.24 16:08:38] Validating DL acw_descramble

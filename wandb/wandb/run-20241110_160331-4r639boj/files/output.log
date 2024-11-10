@@ -1,0 +1,106 @@
+WARNING:common_seq.util:Logger had handlers already set WTF
+..... CLEARING
+[11.10 16:03:32] [train_clues.py:134 - <module>()]	 train_clues.py --default_train=base --name=naive_top_curricular --project=curricular --wandb_dir=./wandb --data_dir=./data/clue_json/guardian/naive_random --multitask=ACW__ACW_descramble --num_workers=0
+[11.10 16:03:32] [util.py:160 - set_seed()]	 Setting seed
+[11.10 16:03:32] [util_checkpoint.py:65 - __init__()]	 Saver will track (metric, maximize?)
+ [('dev/num_match_top_sampled', True), ('multisave', True), ('multi/acw/num_match_in_sample', True), ('epoch', True)]
+[11.10 16:03:32] [util.py:78 - get_available_devices()]	 Device: cpu	 GPU IDs: []	 machine: lizs-mbp-4.wifi.local.cmu.edu
+
+[11.10 16:03:36] [train_abc.py:783 - setup_dataloaders_multi()]	 Setting up for multitask
+[11.10 16:03:36] [util_dataloader_batch.py:56 - __init__()]	 Loading cluedatasetbatched of type train
+[11.10 16:03:36] [util_dataloader_batch.py:72 - __init__()]	 For dataset, found readme: 
+[11.10 16:03:36] [util_dataloader_batch.py:73 - __init__()]	 ['Guardian data. Split: naive_random\n', 'Total: 142380\n', 'splits: [85428, 28476, 28476]\n', '\n', "{'idx': -1,\n", " 'input': 'Suffering to grasp edge of plant (8)',\n", " 'target': 'agrimony'}\n", "{'idx': -1,\n", " 'input': 'Honour Ben and Noel with new order (7)',\n", " 'target': 'ennoble'}\n", "{'idx': -1, 'input': 'Bit the royal we love? Cheers! (4)', 'target': 'iota'}\n", '\n', '\n']
+[11.10 16:03:36] [util_dataloader_batch.py:197 - _get_dataloader_batched()]	 Dataset train loaded with size: 85428
+[11.10 16:03:36] [util_dataloader_batch.py:34 - __post_init_check()]	 Dataloader:
+	Record past, up to yesterday's ultimate revelation (9) => discovery
+[11.10 16:03:36] [util_dataloader_batch.py:174 - _get_dataloader_from_dataset()]	 Dataloader loaded from dataset
+[11.10 16:03:36] [util_dataloader_batch.py:56 - __init__()]	 Loading cluedatasetbatched of type val
+[11.10 16:03:36] [util_dataloader_batch.py:197 - _get_dataloader_batched()]	 Dataset val loaded with size: 28476
+[11.10 16:03:36] [util_dataloader_batch.py:34 - __post_init_check()]	 Dataloader:
+	Desk register taken no further than Ozzie? (7) => rolltop
+[11.10 16:03:36] [util_dataloader_batch.py:174 - _get_dataloader_from_dataset()]	 Dataloader loaded from dataset
+[11.10 16:03:36] [util_multiloader.py:110 - _prepare_dataloaders()]	 For task acw, using cfg-provided collate function
+[11.10 16:03:36] [util_dataloader_batch.py:56 - __init__()]	 Loading cluedatasetbatched of type train
+[11.10 16:03:36] [util_dataloader_batch.py:72 - __init__()]	 For dataset, found readme: 
+[11.10 16:03:36] [util_dataloader_batch.py:73 - __init__()]	 ['ACW set; xd cw set, all\n', 'Total: 2970569\n', 'splits: [2970569]\n', '\n', "{'idx': 0,\n", " 'input': 'Prime whose first three digits are p^q and whose last three digits '\n", "          'are q^p (for primes p, q whose value is left as an exercise for the '\n", "          'reader) (6)',\n", " 'target': '125243'}\n", "{'idx': 1,\n", " 'input': 'Multiple of XI (except not in Roman numerals; also, hope you '\n", "          'learned the trick for checking divisibility by eleven, which is '\n", "          'similar to the trick for nine except with an alternating sum, '\n", "          'because eleven is one more than ten while nine is one less than '\n", "          'ten) (6)',\n", " 'target': '158719'}\n", "{'idx': 2,\n", " 'input': 'Overture whose use of cannons is canon (4)',\n", " 'target': '1812'}\n", '\n', '\n']
+[11.10 16:03:38] [util_dataloader_batch.py:34 - __post_init_check()]	 Dataloader:
+	phrase: Light-sensing eye part (6) => retina
+[11.10 16:03:38] [util_dataloader_batch.py:174 - _get_dataloader_from_dataset()]	 Dataloader loaded from dataset
+[11.10 16:03:39] [util_dataloader_batch.py:34 - __post_init_check()]	 Dataloader:
+	phrase: Dwarf planet just beyond the Kuiper Belt (4) => eris
+[11.10 16:03:39] [util_dataloader_batch.py:174 - _get_dataloader_from_dataset()]	 Dataloader loaded from dataset
+[11.10 16:03:39] [util_multiloader.py:110 - _prepare_dataloaders()]	 For task acw_descramble, using cfg-provided collate function
+[11.10 16:03:39] [util_dataloader_batch.py:56 - __init__()]	 Loading cluedatasetbatched of type train
+[11.10 16:03:39] [util_dataloader_batch.py:72 - __init__()]	 For dataset, found readme: 
+[11.10 16:03:39] [util_dataloader_batch.py:73 - __init__()]	 ['ACW set; xd cw set, all\n', 'Total: 2970569\n', 'splits: [2970569]\n', '\n', "{'idx': 0,\n", " 'input': 'Prime whose first three digits are p^q and whose last three digits '\n", "          'are q^p (for primes p, q whose value is left as an exercise for the '\n", "          'reader) (6)',\n", " 'target': '125243'}\n", "{'idx': 1,\n", " 'input': 'Multiple of XI (except not in Roman numerals; also, hope you '\n", "          'learned the trick for checking divisibility by eleven, which is '\n", "          'similar to the trick for nine except with an alternating sum, '\n", "          'because eleven is one more than ten while nine is one less than '\n", "          'ten) (6)',\n", " 'target': '158719'}\n", "{'idx': 2,\n", " 'input': 'Overture whose use of cannons is canon (4)',\n", " 'target': '1812'}\n", '\n', '\n']
+[11.10 16:03:41] [util_dataloader_batch.py:34 - __post_init_check()]	 Dataloader:
+	descramble: ihns lower leg part (4) => shin
+[11.10 16:03:41] [util_dataloader_batch.py:174 - _get_dataloader_from_dataset()]	 Dataloader loaded from dataset
+[11.10 16:03:41] [util_dataloader_batch.py:34 - __post_init_check()]	 Dataloader:
+	descramble: iers dwarf planet just beyond the Kuiper Belt (4) => eris
+[11.10 16:03:41] [util_dataloader_batch.py:174 - _get_dataloader_from_dataset()]	 Dataloader loaded from dataset
+[11.10 16:03:41] [util_multiloader.py:214 - __init__()]	 Configuring multiloader with freqs [20, 3, 3] batches
+[11.10 16:03:41] [util_multiloader.py:257 - _setup()]	 Finished setting up multiloader
+	 batch_sizes: [256, 256, 256]
+	 freq: [20, 3, 3]
+[11.10 16:03:41] [train_abc.py:440 - verify_and_log_trainer_info()]	 Verifying that all metrics are OK. The outputs here are NOT from the model that was passed ifone was passed
+[11.10 16:03:41] [train_abc.py:550 - val_step()]	 Evaluating at all_step 0 (epoch=0)...
+[11.10 16:03:41] [train_abc.py:559 - val_step()]	 Primary eval; epoch: 0
+  0%|          | 0/28476 [00:00<?, ?it/s]  1%|          | 256/28476 [01:46<3:15:24,  2.41it/s][11.10 16:05:28] [train_abc.py:621 - validate_val_loader()]	 
+ idx: -1
+Source: Desk register taken no further than Ozzie? (7)
+ 	Target: rolltop
+	 Actual: Ozzie? (7) (7) (8) (8) (8) (8) (8) 
+  1%|          | 256/28476 [01:46<3:15:24,  2.41it/s, NLL=9.56]                                                                 1%|          | 256/28476 [01:46<3:15:24,  2.41it/s, NLL=9.56]
+  1%|          | 256/28476 [01:46<3:15:31,  2.41it/s, NLL=9.56][11.10 16:05:28] [train_abc.py:569 - val_step()]	 Multitask eval; epoch: 0
+
+[11.10 16:05:28] [train_abc.py:571 - val_step()]	 Validating DL acw
+  0%|          | 0/29706 [00:00<?, ?it/s]  1%|          | 256/29706 [03:09<6:04:09,  1.35it/s]  1%|          | 256/29706 [03:09<6:04:09,  1.35it/s, NLL=10.5]  1%|          | 256/29706 [03:10<6:04:30,  1.35it/s, NLL=10.5]
+[11.10 16:08:38] [train_abc.py:571 - val_step()]	 Validating DL acw_descramble
+  0%|          | 0/29706 [00:00<?, ?it/s]  0%|          | 0/29706 [03:38<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/lizchu413/Documents/LIZ CHU/Fall 2024/11711/anlp_f24_p3/train_clues.py", line 160, in <module>
+    local_trainer = ClueTrainer(wandb.config, local_rh, aux_config=aux_config)
+  File "/Users/lizchu413/Documents/LIZ CHU/Fall 2024/11711/anlp_f24_p3/train_clues.py", line 26, in __init__
+    super().__init__(config, rh, **kwargs)
+  File "/Users/lizchu413/Documents/LIZ CHU/Fall 2024/11711/anlp_f24_p3/train_abc.py", line 752, in __init__
+    super().__init__(config, rh, **kwargs)
+  File "/Users/lizchu413/Documents/LIZ CHU/Fall 2024/11711/anlp_f24_p3/train_abc.py", line 270, in __init__
+    self.verify_and_log_trainer_info()
+  File "/Users/lizchu413/Documents/LIZ CHU/Fall 2024/11711/anlp_f24_p3/train_abc.py", line 442, in verify_and_log_trainer_info
+    metrics_dict, _ = self.metrics_list_to_dict(self.val_step(trial_run=True))
+  File "/Users/lizchu413/Documents/LIZ CHU/Fall 2024/11711/anlp_f24_p3/train_abc.py", line 572, in val_step
+    metrics_accum = self.validate_val_loader(val.dataloader,
+  File "/Users/lizchu413/Documents/LIZ CHU/Fall 2024/11711/anlp_f24_p3/train_abc.py", line 605, in validate_val_loader
+    valstepbatch = self.get_valstepdict_for_batch(pbatch, do_sample=self.config.do_sample)
+  File "/Users/lizchu413/Documents/LIZ CHU/Fall 2024/11711/anlp_f24_p3/train_abc.py", line 540, in get_valstepdict_for_batch
+    self._generate_outputs_sampled(pbatch.src_ids, pbatch.src_mask, pbatch.batch_size)
+  File "/Users/lizchu413/Documents/LIZ CHU/Fall 2024/11711/anlp_f24_p3/train_abc.py", line 1027, in _generate_outputs_sampled
+    generated_ids_sampled = self.model.generate(
+  File "/Users/lizchu413/miniconda3/envs/decrypt/lib/python3.9/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/Users/lizchu413/miniconda3/envs/decrypt/lib/python3.9/site-packages/transformers/generation_utils.py", line 1034, in generate
+    return self.beam_search(
+  File "/Users/lizchu413/miniconda3/envs/decrypt/lib/python3.9/site-packages/transformers/generation_utils.py", line 1771, in beam_search
+    outputs = self(
+  File "/Users/lizchu413/miniconda3/envs/decrypt/lib/python3.9/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/Users/lizchu413/miniconda3/envs/decrypt/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 1593, in forward
+    decoder_outputs = self.decoder(
+  File "/Users/lizchu413/miniconda3/envs/decrypt/lib/python3.9/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/Users/lizchu413/miniconda3/envs/decrypt/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 985, in forward
+    layer_outputs = layer_module(
+  File "/Users/lizchu413/miniconda3/envs/decrypt/lib/python3.9/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/Users/lizchu413/miniconda3/envs/decrypt/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 663, in forward
+    cross_attention_outputs = self.layer[1](
+  File "/Users/lizchu413/miniconda3/envs/decrypt/lib/python3.9/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/Users/lizchu413/miniconda3/envs/decrypt/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 578, in forward
+    attention_output = self.EncDecAttention(
+  File "/Users/lizchu413/miniconda3/envs/decrypt/lib/python3.9/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/Users/lizchu413/miniconda3/envs/decrypt/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 481, in forward
+    scores = torch.matmul(
+KeyboardInterrupt

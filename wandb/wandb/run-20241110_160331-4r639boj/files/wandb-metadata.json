@@ -1,0 +1,30 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.9.20",
+    "heartbeatAt": "2024-11-10T21:03:32.795957",
+    "startedAt": "2024-11-10T21:03:31.952513",
+    "docker": null,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "--default_train=base",
+        "--name=naive_top_curricular",
+        "--project=curricular",
+        "--wandb_dir=./wandb",
+        "--data_dir=./data/clue_json/guardian/naive_random",
+        "--multitask=ACW__ACW_descramble",
+        "--num_workers=0"
+    ],
+    "state": "running",
+    "codePath": "train_clues.py",
+    "program": "/Users/lizchu413/Documents/LIZ CHU/Fall 2024/11711/anlp_f24_p3/train_clues.py",
+    "git": {
+        "remote": "https://github.com/lizchu413/anlp_f24_p3.git",
+        "commit": "fc6b15498bbea21b8ac490863cc8a31c26519f74"
+    },
+    "email": "lizchu413@gmail.com",
+    "root": "/Users/lizchu413/Documents/LIZ CHU/Fall 2024/11711/anlp_f24_p3",
+    "host": "lizs-mbp-4.wifi.local.cmu.edu",
+    "username": "lizchu413",
+    "executable": "/Users/lizchu413/miniconda3/envs/decrypt/bin/python"
+}

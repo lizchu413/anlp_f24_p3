@@ -1,0 +1,132 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.13
+    framework: huggingface
+    huggingface_version: 4.6.0
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.9.20
+    t:
+      1:
+      - 1
+      - 11
+      2:
+      - 1
+      - 11
+      4: 3.9.20
+      5: 0.10.13
+      6: 4.6.0
+ada:
+  desc: null
+  value: true
+ada_constant:
+  desc: null
+  value: false
+add_special_tokens:
+  desc: null
+  value: false
+batch_size:
+  desc: null
+  value: 256
+batched_dl:
+  desc: null
+  value: true
+ckpt_path:
+  desc: null
+  value: null
+comment:
+  desc: null
+  value: ''
+data_dir:
+  desc: null
+  value: ./data/clue_json/guardian/naive_random
+default_train:
+  desc: null
+  value: base
+default_val:
+  desc: null
+  value: null
+dev_run:
+  desc: null
+  value: false
+do_sample:
+  desc: null
+  value: true
+do_save:
+  desc: null
+  value: true
+early_stopping:
+  desc: null
+  value: null
+fast_tokenizer:
+  desc: null
+  value: true
+generation_beams:
+  desc: null
+  value: 5
+grad_accum_steps:
+  desc: null
+  value: 1
+hacky:
+  desc: null
+  value: false
+model_name:
+  desc: null
+  value: t5-base
+multi_gpu:
+  desc: null
+  value: null
+multitask:
+  desc: null
+  value: ACW__ACW_descramble
+multitask_num:
+  desc: null
+  value: -1
+name:
+  desc: null
+  value: naive_top_curricular
+no_train:
+  desc: null
+  value: false
+num_epochs:
+  desc: null
+  value: 15
+num_train:
+  desc: null
+  value: 85428
+num_val:
+  desc: null
+  value: 28476
+num_workers:
+  desc: null
+  value: 0
+project:
+  desc: null
+  value: curricular
+resume_train:
+  desc: null
+  value: null
+seed:
+  desc: null
+  value: 42
+special:
+  desc: null
+  value: null
+test:
+  desc: null
+  value: false
+total_train:
+  desc: null
+  value: 427140
+use_json:
+  desc: null
+  value: true
+val_freq:
+  desc: null
+  value: null
+wandb_dir:
+  desc: null
+  value: ./wandb
