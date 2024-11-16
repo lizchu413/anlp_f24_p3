@@ -32,15 +32,23 @@ Baseline (T5) disjoint (using word-initial disjoint data, with lengths)
 python train_clues.py --default_train=base --name=baseline_disj --project=baseline --wandb_dir='./wandb' --data_dir='data/clue_json/guardian/word_init_disjoint/'
 ```
 
+For top result in Table 2 of the paper
+
+```
+python train_clues.py --default_train=base --name=naive_top_curricular --project=curricular --wandb_dir='./wandb' --data_dir='data/clue_json/guardian/naive_random/' --multitask=final_top_result_scaled_up
+```
+
+## Evaluation
+
 Generating test set predictions using the best checkpoint on baseline (note that `ckpt_path` needs to be replaced with the best performing checkpoint from the command above): 
 ```
 python train_clues.py --default_val=base --name=baseline_disj_val --project=baseline --data_dir='data/clue_json/guardian/word_init_disjoint/' --ckpt_path='./wandb/wandb/run-20241116_184041-kvrnpetp/files/epoch_14.pth.tar' --wandb_dir=./wandb --test
 ```
 
-For top result in Table 2 of the paper
+Take note of the `..preds.json` file created by this run to compute the metrics: 
 
 ```
-python train_clues.py --default_train=base --name=naive_top_curricular --project=curricular --wandb_dir='./wandb' --data_dir='data/clue_json/guardian/naive_random/' --multitask=final_top_result_scaled_up
+python -m run_metrics --file "FILEPATHHERE"
 ```
 
 ## Accessing Data (skip dataset setup)
