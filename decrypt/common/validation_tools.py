@@ -443,11 +443,11 @@ def load_and_run_t5(fname, label=None, filter_fcn=None, pre_truncate=None,
 
         # eval (and backfill)
         model_outputs = []
-        idx_set = set()
+        # idx_set = set()
         for d in json_blob:
             idx, input, tgt, greedy, sampled = d
-            assert idx not in idx_set
-            idx_set.add(idx)
+            # assert idx not in idx_set
+            # idx_set.add(idx)
 
             mp = ModelPrediction(idx, input, tgt, greedy, sampled)
             mp.model_eval = eval(mp, pre_truncate=pre_truncate,

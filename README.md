@@ -48,7 +48,7 @@ python train_clues.py --default_val=base --name=baseline_disj_val --project=base
 Take note of the `..preds.json` file created by this run to compute the metrics: 
 
 ```
-python -m run_metrics --file "FILEPATHHERE"
+python -m run_metrics -file "FILEPATHHERE"
 ```
 
 ## Accessing Data (skip dataset setup)
