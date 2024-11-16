@@ -28,6 +28,11 @@ Baseline (T5) disjoint (using word-initial disjoint data, with lengths)
 python train_clues.py --default_train=base --name=baseline_disj --project=baseline --wandb_dir='./wandb' --data_dir='data/clue_json/guardian/word_init_disjoint/'
 ```
 
+Generating test set predictions using the best checkpoint on baseline: 
+```
+python train_clues.py --default_val=base --name=baseline_disj_val --project=baseline --data_dir='data/clue_json/guardian/word_init_disjoint/' --ckpt_path='./wandb/wandb/run-20241116_184041-kvrnpetp/files/epoch_14.pth.tar' --wandb_dir=./wandb --test
+```
+
 For top result in Table 2 of the paper
 
 ```
