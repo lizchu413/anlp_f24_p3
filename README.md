@@ -22,6 +22,10 @@ python -m setup_curricular
 
 Running the code: 
 
+Baseline WordNet (disjoint) + evaluation (metrics)
+```
+python -m setup_wordnet
+```
 
 Baseline (T5) disjoint (using word-initial disjoint data, with lengths)
 ```
