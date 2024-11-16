@@ -3,7 +3,7 @@ cryptic crossword solving with LLMs -- replicating paper results from this paper
 
 Goal: Numbers that meet or exceeds the previously reported results. A comprehensive analysis of the results, and forward-looking plans for further development.
 
-Note Table 3 in the paper: we attempt to reproduce the ACW + ACW-descramble row
+Note Table 2 in the paper: we attempt to reproduce the very last row (ACW + ACW-descramble)
 
 ## Setup Instructions
 
