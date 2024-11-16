@@ -8,8 +8,8 @@
  ('agg_sample_len_correct', 1.0),
  ('agg_sample_len_pre_truncate', 10.13481787346999),
  ('agg_sample_wordct_correct', 0.7294817857460955),
- ('agg_top_10_after_filter', 0.10800766848547412),
- ('agg_top_match', 0.02607285061200413),
+ ('agg_top_10_after_filter', 0.10800766848547412), ** TOP 10 CONTAINS TEST **
+ ('agg_top_match', 0.02607285061200413), ** TOP CORRECT TEST **
  ('agg_top_match_len_correct', 0.8638843828343902),
  ('agg_top_match_none', 0.1361156171656098),
  ('agg_top_match_wordct_correct', 0.5437546084648281),
