@@ -22,10 +22,18 @@ python -m setup_curricular
 
 Running the code: 
 
+
+Baseline (T5) disjoint (using word-initial disjoint data, with lengths)
 ```
-python train_clues.py --default_train=base --name=naive_top_curricular --project=curricular --wandb_dir='./wandb' --data_dir='./data/clue_json/guardian/naive_random' --multitask=ACW__ACW_descramble --num_workers=1
+python train_clues.py --default_train=base --name=baseline_disj --project=baseline --wandb_dir='./wandb' --data_dir='data/clue_json/guardian/word_init_disjoint/'
 ```
 
-## GETTING THE DATA
+For top result in Table 2 of the paper
+
+```
+python train_clues.py --default_train=base --name=naive_top_curricular --project=curricular --wandb_dir='./wandb' --data_dir='/data/clue_json/guardian/naive_random/' --multitask=final_top_result_scaled_up
+```
+
+## Accessing Data (skip dataset setup)
 
 Download the data folder from [this link](https://drive.google.com/file/d/1gJLNPqzeCq6uIp_cXujjixKYWT1h9Z09/view?usp=sharing), then unzip and put in this directory (`/anlp_f24_p3`). 
